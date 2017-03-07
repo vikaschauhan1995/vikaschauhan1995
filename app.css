@@ -1,0 +1,84 @@
+body{
+	background-color:black;
+}
+.stars{
+	height:5px;
+	width:5px;
+	border-radius:50%;
+	position:;
+	background-color:white;
+}
+.lines{
+	width:1px;
+	background-color:;
+	position:absolute;
+}
+.first-comb{
+	width:500px;
+	height:0px;
+	background-color:;
+	box-shadow:0px 0px 0px 1px white;
+	left:150px;
+	top:300px;
+	transform:rotate(15deg);
+	transition:0.5s;
+}
+.star-f-l{
+
+}
+.star-f-m{
+
+}
+.star-f-r{
+
+}
+.stars-alig{
+	margin-top:-2px;
+}
+#firstCombId{
+	-webkit-animation:toggleAnim 2s infinite;
+	-moz-animation:toggleAnim 2s infinite;
+	-o-animation:toggleAnim 2s infinite;
+	animation:toggleAnim 2s infinite;
+}
+
+@-moz-keyframes toggleAnim{
+0%{box-shadow:0px 0px 0px 1px white;}
+33%{box-shadow:0px 0px 0px 1px transparent;}
+66%{box-shadow:0px 0px 0px 1px transparent;}
+100%{box-shadow:0px 0px 0px 1px white;}
+}
+.second-comb{
+	width:200px;
+	height:0px;
+	background-color:;
+	box-shadow:0px 0px 0px 1px white;
+	left:150px;
+	top:300px;
+	transform-origin:right center;
+	transform:rotate(0deg);
+	transition:0.5s;
+}
+.second-sec-comb{
+	width:300px;
+	height:1px;
+	position:absolute;
+	background-color:;
+	-webkit-animation:toggleAnim 4s infinite;
+	left:350px;
+	top:300px;
+	transform-origin:left center;
+	transform:rotate(20deg);
+	transition:0.5s;
+}
+#secSecStarI{
+	-webkit-animation:starTogg 1s infinite;
+}
+@-moz-keyframes starTogg{
+	from{
+		background-color:white;
+	}
+	to{
+		background-color:transparent;
+	}
+}
