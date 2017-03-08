@@ -1,101 +1,21 @@
 body{
-	background-image:url("img/nights.jpg");
-	object-fit:cover;
-	top:0;
-	left:0;
-	background-position:center center;
-	background-repeat:no-repeat;
-}
-.stars{
-	height:5px;
-	width:5px;
-	border-radius:50%;
-	position:;
-	background-color:white;
-}
-.lines{
-	width:1px;
-	background-color:;
-	position:absolute;
-}
-.first-comb{
-	width:500px;
-	height:0px;
-	background-color:;
-	box-shadow:0px 0px 0px 1px white;
-	left:150px;
-	top:300px;
-	transform:rotate(15deg);
-	transition:0.5s;
-}
-.star-f-l{
 
 }
-.star-f-m{
-
+p{
+	text-align:justify;
 }
-.star-f-r{
-
+.navbar{
+	background-color:black;
 }
-.stars-alig{
-	margin-top:-2px;
-}
-#firstCombId{
-	-webkit-animation:toggleAnim 2s infinite;
-	-moz-animation:toggleAnim 2s infinite;
-	-o-animation:toggleAnim 2s infinite;
-	animation:toggleAnim 2s infinite;
-}
-
-@-moz-keyframes toggleAnim{
-0%{box-shadow:0px 0px 0px 1px white;}
-33%{box-shadow:0px 0px 0px 1px transparent;}
-66%{box-shadow:0px 0px 0px 1px transparent;}
-100%{box-shadow:0px 0px 0px 1px white;}
-}
-.second-comb{
-	width:200px;
-	height:0px;
-	background-color:;
-	box-shadow:0px 0px 0px 1px white;
-	left:150px;
-	top:300px;
-	transform-origin:right center;
-	transform:rotate(0deg);
-	transition:0.5s;
-}
-.second-sec-comb{
-	width:300px;
-	height:1px;
-	position:absolute;
-	background-color:white;
-	
-	left:350px;
-	top:300px;
-	transform-origin:left center;
-	transform:rotate(50deg);
-	-webkit-animation:starTogg 5s infinite;
-}
-#secSecStarI{
-	-webkit-animation:starTogg 5s infinite;
-}
-@-moz-keyframes starTogg{
-	0%{background-color:white;}
-	90%{background-color:white;}
-	100%{background-color:transparent;}
-}
-
-
-
-
-.icon {
+.icon{
+  margin-top:5px;
+  background-color:black;
   position: relative;
   overflow: hidden;
-  width: 50px;
-  height: 50px;
+  padding-left:20px;
+  padding-right:20px;
   display: inline-block;
-  
-  margin: 25px 0 25px 25px;
+  margin:;
   border-radius: 5px;
   color: #fff;
   text-decoration: none;
@@ -103,6 +23,11 @@ body{
   line-height: 50px;
   font-size: 12px;
   font-family: sans-serif;
+}
+.icon:hover{
+	text-decoration:none;
+	color:white;
+	background-color:#1e1e1e;
 }
 .icon:after {
   content: "";
@@ -112,7 +37,7 @@ body{
   width: 200%;
   height: 200%;
   opacity: 0;
-  transform: rotate(30deg);
+  transform: rotate(0deg);
   
   background: rgba(255, 255, 255, 0.13);
   background: linear-gradient(
