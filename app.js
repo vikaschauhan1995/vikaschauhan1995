@@ -18,10 +18,8 @@ starAnim.animRot_I = function(x){
 	starAnim.secRotatI.style.WebkitTransform="rotate("+x+"deg)";
 };
 starAnim.rotatI = function(){
-	
-		starAnim.degg += 20;
-		starAnim.animRot_I(starAnim.degg);
-	
+	starAnim.degg = randomInt(0,360);
+	starAnim.animRot_I(starAnim.degg);
 };
 starAnim.rotatD = function(){
 	if(starAnim.degg == 0){
@@ -31,4 +29,4 @@ starAnim.rotatD = function(){
 		starAnim.animRot_I(starAnim.degg);
 	}
 };
-starAnim.intrv = setInterval(starAnim.rotatI,400);
+starAnim.intrv = setInterval(starAnim.rotatI,5000);
