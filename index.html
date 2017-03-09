@@ -15,7 +15,7 @@
   <script src="bower_components/angular-route/angular-route.js"></script>
   <script src="bower_components/angular-animate/angular-animate.js"></script>
 </head>
-<body ng-app="">
+<body ng-app="myApp">
 
 <nav class="navbar navbar-default">
   <div class="container-fluid">
@@ -65,14 +65,14 @@
   <div class="container">
     <div class="row">
       <div class="col-xs-4">
-        <a href="#" class="icon mid-shine-but"><i class="fa fa-code fa-3x nav-icon" aria-hidden="true"></i><br/><div class="nav-mid-cont">SKILL</div></a>
+        <a href="#skill" class="icon mid-shine-but"><i class="fa fa-code fa-3x nav-icon" aria-hidden="true"></i><br/><div class="nav-mid-cont">SKILL</div></a>
       </div>
       <div class="col-xs-4">
-        <a href="#" class="icon mid-shine-but"><i class="fa fa-desktop fa-3x nav-icon" style="margin-top:5px;" aria-hidden="true"></i>
+        <a href="#work" class="icon mid-shine-but"><i class="fa fa-desktop fa-3x nav-icon" style="margin-top:5px;" aria-hidden="true"></i>
 </i><br/><div class="nav-mid-cont" style="margin-top:-15px;">WORK</div></a>
       </div>
       <div class="col-xs-4">
-        <a href="#" class="icon mid-shine-but"><i class="fa fa-phone fa-3x nav-icon" aria-hidden="true"></i><br/><div class="nav-mid-cont">CONTACT</div></a>
+        <a href="#contact" class="icon mid-shine-but"><i class="fa fa-phone fa-3x nav-icon" aria-hidden="true"></i><br/><div class="nav-mid-cont">CONTACT</div></a>
       </div>
     </div>
   </div>
@@ -80,7 +80,7 @@
 <div class="container-fluid toggle-fuide-view">
   <div class="container">
     <div class="row" style="height:550px;">
-      
+      <div ng-view></div>
     </div>
   </div>
 </div>

@@ -72,7 +72,8 @@ p{
 .mid-shine-but{
 	width:100%;
 	font-size:21px;
-	margin-bottom:-3px;
+	margin-bottom:-5px;
+	margin-top:0px;
 }
 
 .mid-shine-but:hover .nav-icon{
