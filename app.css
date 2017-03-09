@@ -9,7 +9,7 @@ p{
 }
 .icon{
   margin-top:5px;
-  background-color:black;
+  background-color:;
   position: relative;
   overflow: hidden;
   padding-left:20px;
@@ -27,7 +27,7 @@ p{
 .icon:hover{
 	text-decoration:none;
 	color:white;
-	background-color:#1e1e1e;
+	background-color:;
 }
 .icon:after {
   content: "";
@@ -37,7 +37,7 @@ p{
   width: 200%;
   height: 200%;
   opacity: 0;
-  transform: rotate(0deg);
+  transform: rotate(10deg);
   
   background: rgba(255, 255, 255, 0.13);
   background: linear-gradient(
@@ -55,4 +55,46 @@ p{
   transition-property: left, top, opacity;
   transition-duration: 0.7s, 0.7s, 0.15s;
   transition-timing-function: ease;
+}
+.social-icons-c i{
+	background-color:grey;
+	color:#444444;
+	padding:20px;
+	border-radius:50%;
+}
+.social-icons-c i:hover{
+	color:white;
+	background-color:black;
+	cursor:pointer;
+	transition:0.5s;
+}
+
+.mid-shine-but{
+	width:100%;
+	font-size:21px;
+	margin-bottom:-3px;
+}
+
+.mid-shine-but:hover .nav-icon{
+	color:white;
+}
+.mid-shine-but:hover .nav-mid-cont{
+	color:white;
+}
+.mid-shine-but i{
+	color:#444444;
+	margin-top:px;
+}
+.nav-mid-cont{
+	color:#444444;
+	margin:-10px;
+}
+.toggle-fuide-view{
+	background-color: black;
+    background: url('img/toggle-banner.jpg') no-repeat center center fixed; 
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    background-size: cover;
+    -o-background-size: cover;
+    height:100%;
 }
