@@ -11,5 +11,5 @@ angular.module("myApp").config(function($routeProvider){
   .when("/contact",{
   	templateUrl:"contact/contact.template.html"
   })
-  .otherwise("/");
+  .otherwise("/work");
 });
