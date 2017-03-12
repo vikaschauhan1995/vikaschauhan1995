@@ -5,21 +5,41 @@
 </div>
 <div class="row">
 	<div class="col-sm-6 col-xs-10 col-sm-offset-3 col-xs-offset-1">
-		<form>
+		<form name="contactForm" ng-controller="contactValidate" novalidate>
 			<div class="form-group">
-				<input type="text" class="form-control bor-input-el" placeholder="Enter Your Name" required />
+				<input type="text" class="form-control bor-input-el" name="username" ng-minlength="3" ng-maxlength="25" ng-model="username" placeholder="Enter Your Name" required />
+				<span style="color:red;" ng-show="contactForm.username.$dirty && contactForm.username.$invalid">
+					<span ng-show="contactForm.username.$error.required">Username is required</span>
+					<span ng-show="contactForm.username.$error.minlength || contactForm.username.$error.maxlength">Username must be between 3 to 25 characters</span>
+				</span>
 			</div>
 			<div class="form-group">
-				<input type="email" class="form-control bor-input-el" placeholder="Enter Your Email" required />
+				<input type="email" class="form-control bor-input-el" name="contEmail" ng-model="contEmail" placeholder="Enter Your Email" required />
+				<span style="color:red;" ng-show="contactForm.contEmail.$dirty && contactForm.contEmail.$invalid">
+					<span ng-show="contactForm.contEmail.$error.required">
+						Email is required
+					</span>
+					<span ng-show="!contactForm.contEmail.$valid">Email not valid</span>
+				</span>
 			</div>
 			<div class="form-group">
-				<input type="text" class="form-control bor-input-el" placeholder="Subject" required />
+				<input type="text" class="form-control bor-input-el" name="contSub" ng-model="contSub" ng-minlength="5" ng-maxlength="50" placeholder="Subject" required />
+				<span style="color:red;" ng-show="contactForm.contSub.$dirty && contactForm.contSub.$invalid">
+					<span ng-show="contactForm.contSub.$error.required">Subject is required</span>
+					<span ng-show="contactForm.contSub.$error.minlength || contactForm.contSub.$error.maxlength">Subject must be between 5 to 50 characters</span>
+				</span>
 			</div>
 			<div class="form-group">
-				<textarea class="form-control bor-input-el txt-area-" placeholder="Enter Your Message" required></textarea>
+				<textarea class="form-control bor-input-el txt-area-" name="contMess" ng-model="contMess" ng-minlength="20" ng-maxlength="1000" placeholder="Enter Your Message" required></textarea>
+				<span style="color:red;" ng-show="contactForm.contMess.$dirty && contactForm.contMess.$invalid">
+					<span ng-show="contactForm.contMess.$error.required">Message field is required</span>
+					<span ng-show="contactForm.contMess.$error.minlength || contactForm.contMess.$error.maxlength">
+						Message must be between 20 to 1000 characters
+					</span>
+				</span>
 			</div>
 			<div class="form-group text-center">
-				<input type="submit" class="btn bor-input-el btn-cust" value="SEND MESSAGE" />
+				<input type="submit" ng-click="submitC()" class="btn bor-input-el btn-cust" value="SEND MESSAGE" />
 			</div>
 		</form>
 	</div>
