@@ -8,5 +8,8 @@ angular.module("myApp").config(function($routeProvider){
   .when("/work",{
   	templateUrl:'work/work.template.html'
   })
+  .when("/contact",{
+  	templateUrl:"contact/contact.template.html"
+  })
   .otherwise("/");
 });

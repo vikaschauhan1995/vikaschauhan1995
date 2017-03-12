@@ -8,30 +8,15 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" href="bower_components/html5-boilerplate/dist/css/normalize.css">
   <link rel="stylesheet" href="css/bootstrap.min.css">
-  <link rel="stylesheet" href="app.css">
   <link rel="stylesheet" href="font-awesome/css/font-awesome.min.css">
   
   <script src="bower_components/angular/angular.js"></script>
   <script src="bower_components/angular-route/angular-route.js"></script>
   <script src="bower_components/angular-animate/angular-animate.js"></script>
+  <link rel="stylesheet" href="app.css">
 </head>
 <body ng-app="myApp">
 
-<nav class="navbar navbar-default">
-  <div class="container-fluid">
-    <div class="navbar-header">
-      <a class="navbar-brand" href="#">Vikas Chauhan</a>
-    </div>
-    <ul class="nav navbar-nav" style="float:right;">
-     <a href="#" class="icon">WELCOME</a>
-     <a href="#" class="icon">ABOUT ME</a>
-     <a href="#" class="icon">SERVICE</a>
-     <a href="#" class="icon">STORY</a>
-     <a href="#" class="icon">WORK</a>
-     <a href="#" class="icon">CONTACT</a>
-    </ul>
-  </div>
-</nav>
 <div class="container-fluid" style="width:100%;margin-top:-21px;padding:0px;">
   <img src="img/share-banner.jpg" style="width:100%;margin:0px;" class="" alt="Responsive image">
 </div>
@@ -42,8 +27,18 @@
         <img src="img/mid-left-pic.jpg" style="width:100%;margin:0px;" class="" alt="Responsive image" />
       </div>
       <div class="col-sm-8">
-        <div class="" style="margin-top:100px;">
-          <h1>Hi, I'm Vikas Chauhan</h1>
+        <div class="hidden-xs" style="margin-top:100px;">
+          <h1 style="color:grey;">Hi, I'm Vikas Chauhan</h1>
+          <p>
+            Color codes are ways of representing the colors we see everyday in a format that a computer can interpret and display. Commonly used in websites and other software applications, there are a variety of formats, including Hex color codes, RGB and HSL values, and HTML color names, amongst others. Color codes are ways of representing the colors we see everyday in a format that a computer can interpret and display. Commonly used in websites and other software applications, there are a variety of formats, including Hex color codes, RGB and HSL values, and HTML color names, amongst others.
+          </p>
+          <strong><p>
+            Color codes are ways of representing the colors we see everyday in a format that a computer can interpret and display. Commonly used in websites and other software applications, there are a variety of formats, including Hex color codes, RGB and HSL values, and HTML color names, amongst others. Color codes are ways of representing the colors we see everyday in a format that a computer can interpret and display. Commonly used in websites and other software applications, there are a variety of formats, including Hex color codes, RGB and HSL values, and HTML color names, amongst others.
+          </p></strong>
+        </div>
+        <div class="hidden-sm hidden-md hidden-lg
+        ">
+          <h1 style="color:grey;">Hi, I'm Vikas Chauhan</h1>
           <p>
             Color codes are ways of representing the colors we see everyday in a format that a computer can interpret and display. Commonly used in websites and other software applications, there are a variety of formats, including Hex color codes, RGB and HSL values, and HTML color names, amongst others. Color codes are ways of representing the colors we see everyday in a format that a computer can interpret and display. Commonly used in websites and other software applications, there are a variety of formats, including Hex color codes, RGB and HSL values, and HTML color names, amongst others.
           </p>
@@ -57,6 +52,7 @@
           <i class="fa fa-instagram" aria-hidden="true"></i>
           <i class="fa fa-linkedin" aria-hidden="true"></i>
         </div>
+        <div class="empty-space"></div>
       </div>
     </div>
   </div>
@@ -79,13 +75,50 @@
 </div>
 <div class="container-fluid toggle-fuide-view">
   <div class="container">
-    <div style="height:700px;">
+    <div style="padding-bottom:32px;">
       <div ng-view></div>
     </div>
   </div>
 </div>
-
-
+<div class="container-fluid" style="background-color:black;">
+  <div class="container">
+    <div class="row">
+      <div class="col-sm-2 col-md-2 col-lg-2 hidden-xs">
+        <img src="" height="100px" width="100px" style="margin-top:32px;" />
+      </div>
+      <div class="col-sm-2 col-md-2 col-lg-2 text-center hidden-sm hidden-md hidden-lg">
+        <img src="" height="100px" width="100px" style="margin-top:32px;" />
+      </div>
+      <div class="col-sm-5 footer-detail">
+        <h1>Contact</h1>
+        <p>
+          Address: House no. 80B, Pocket D1, Mayur Vihar Phase - 3, East Delhi - 110096<br/>
+          Email: vikas.chauhan.bb@gmail.com<br/>
+          Phone: +91-8802625257<br/>
+        </p>
+      </div>
+      <div class="col-sm-5 footer-detail">
+        <h1>Follow Us</h1>
+        <div class="social-icons-c">
+          <i class="fa fa-facebook" style="padding-left:25px;padding-right:25px;" aria-hidden="true"></i>
+          <i class="fa fa-twitter" aria-hidden="true"></i>
+          <i class="fa fa-instagram" aria-hidden="true"></i>
+          <i class="fa fa-linkedin" aria-hidden="true"></i>
+        </div>
+        <div class="empty-space"></div>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="container-fluid" style="background-color:black;border-top:1px solid #646464;">
+  <div class="container">
+    <div class="row">
+      <div class="col-xs-12 text-center">
+        <h5>Copyright Puite</h5>
+      </div>
+    </div>
+  </div>
+</div>
 
 
 <script src="app.module.js"></script>

@@ -4,6 +4,15 @@ body{
 p{
 	text-align:justify;
 }
+h1{
+	color:white;
+}
+textarea{
+	resize:none;
+}
+.empty-space{
+  margin:32px;
+}
 .navbar{
 	background-color:black;
 }
@@ -99,4 +108,120 @@ p{
     -o-background-size: cover;
     height:100%;
     overflow:hidden;
+}
+.bor-input-el{
+	background-color:rgba(77,77,77,0.2);
+	border:1px solid grey;
+	color:white;
+}
+.form-control:focus {
+    border-color: white;
+    box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.075) inset, 0px 0px 8px rgba(84, 84, 84, 0.5);
+}
+.txt-area-{
+	min-height:150px;
+}
+.btn-cust{
+	border-radius:30px;
+	padding:10px;
+	padding-left:20px;
+	padding-right:20px;
+	font-size:18px;
+}
+.btn-cust:hover{
+	background-color:rgba(77,77,77,1);
+	color:white;
+}
+.empty-img{
+	opacity:0;
+}
+.prog-box{
+  height:4px;
+  width:80%;
+  border:1px solid darkgreen;
+  box-shadow:0px 0px 1px 1px rgba(130,234,111,0.2);
+}
+.prog-estimate{
+  background-color:#5fec43;
+  height:2px;
+}
+.prog-estimate-word{
+  width:80%;
+  -moz-animation:animWord 1s;
+  -moz-transition:linear all 1s;
+}
+.prog-estimate-htmcss{
+  width:95%;
+  -moz-animation:animHtmC 1s;
+  -moz-transition:linear all 1s;
+}
+.prog-estimate-js{
+  width:60%;
+  -moz-animation:animJS 1s;
+  -moz-transition:linear all 1s;
+}
+.prog-estimate-ang{
+  width:70%;
+  -moz-animation:animAngul 1s;
+  -moz-transition:linear all 1s;
+}
+.prog-estimate-php{
+  width:90%;
+  -moz-animation:animPhp 1s;
+  -moz-transition:linear all 1s;
+}
+.prog-estimate-boot{
+  width:90%;
+  -moz-animation:animPhp 1s;
+  -moz-transition:linear all 1s;
+}
+@-moz-keyframes animWord{
+  from{width:0%;}
+  to{width:80%;}
+}
+@-moz-keyframes animHtmC{
+  from{width:0%;}
+  to{width:95%;}
+}
+@-moz-keyframes animJS{
+  from{width:0%;}
+  to{width:60%;}
+}
+@-moz-keyframes animAngul{
+  from{width:0%;}
+  to{width:70%;}
+}
+@-moz-keyframes animPhp{
+  from{width:0%;}
+  to{width:90%;}
+}
+.tech-knowl{
+  border:;
+  padding-top:20px;
+  padding-bottom:20px;
+}
+.tech-now-hed{
+  color:white;
+  font-size:16px;
+  font-weight:bold;
+}
+.footer-detail{
+  color:grey;
+  font-size:16px;
+}
+.footer-detail h1{
+  color:#3b3b3b;
+}
+.work-img-circ{
+  padding:3px;
+  transition:0.2s;
+}
+.work-img-circ:hover{
+  padding:6px;
+  border:3px solid #5fec43;
+  transition:0.2s;
+  cursor:pointer;
+}
+.img-con-s{
+  box-shadow:inset -50px -50px 20px 10px red;
 }
